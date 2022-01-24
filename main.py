@@ -4,6 +4,7 @@
 
 import random
 from background import logo
+from clear_func import clear
 
 attempts = 0
 game_over = False
@@ -40,5 +41,6 @@ while run_again:
         "Do you want to try again: Type 'y' yes and 'n' for no: ").lower()
     if run_again == 'y':
         run_again = True
+        clear()
     else:
         run_again = False
